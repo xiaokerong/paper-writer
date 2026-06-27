@@ -4,9 +4,10 @@ import sys
 
 # 将 backend 目录加入 Python 路径
 backend_dir = os.path.join(os.path.dirname(__file__), "backend")
-sys.path.insert(0, backend_dir)
+if backend_dir not in sys.path:
+    sys.path.insert(0, backend_dir)
 
-# 导入并启动 FastAPI 应用
+# 导入 backend/main.py 的 app
 from main import app
 
 if __name__ == "__main__":
