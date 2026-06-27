@@ -47,39 +47,6 @@ app.add_middleware(
 papers_store: dict = {}
 chat_history: dict = {}
 
-# ── 静态文件（生产环境前端构建产物） ──
-STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
-if os.path.isdir(STATIC_DIR):
-    # API 路由在前面已经注册完毕，静态文件在最后兜底
-    
-    @app.get("/assets/{file_path:path}", include_in_schema=False)
-    async def serve_assets(file_path: str):
-        asset_file = os.path.join(STATIC_DIR, "assets", file_path)
-        if os.path.exists(asset_file) and os.path.isfile(asset_file):
-            return FileResponse(asset_file)
-        raise HTTPException(404, "Asset not found")
-    
-    @app.get("/{filename:path}", include_in_schema=False)
-    async def serve_frontend(filename: str):
-        """SPA 前端：非 /api/ 请求都返回对应静态文件或 index.html"""
-        if filename.startswith("api/"):
-            raise HTTPException(404, "Not found")
-        # 根路径或空路径 → 返回 index.html
-        if not filename:
-            index_path = os.path.join(STATIC_DIR, "index.html")
-            if os.path.exists(index_path):
-                return FileResponse(index_path, media_type="text/html")
-            raise HTTPException(404, "Not found")
-        # 直接文件请求（如 favicon.svg, icons.svg）
-        file_path = os.path.join(STATIC_DIR, filename)
-        if os.path.exists(file_path) and os.path.isfile(file_path):
-            return FileResponse(file_path)
-        # SPA 兜底：返回 index.html
-        index_path = os.path.join(STATIC_DIR, "index.html")
-        if os.path.exists(index_path):
-            return FileResponse(index_path, media_type="text/html")
-        raise HTTPException(404, "Not found")
-
 
 # ═══════════════════════════════════════════
 # 论文生成
@@ -459,6 +426,38 @@ async def api_docx_to_text(file: UploadFile = File(...)):
 @app.get("/api/health")
 async def health():
     return {"status": "ok", "version": "2.1.0", "stored_papers": len(papers_store)}
+
+
+# ═══════════════════════════════════════════
+# 静态文件（生产环境前端，所有 API 路由之后注册）
+# ═══════════════════════════════════════════
+
+STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
+if os.path.isdir(STATIC_DIR):
+    @app.get("/assets/{file_path:path}", include_in_schema=False)
+    async def serve_assets(file_path: str):
+        asset_file = os.path.join(STATIC_DIR, "assets", file_path)
+        if os.path.exists(asset_file) and os.path.isfile(asset_file):
+            return FileResponse(asset_file)
+        raise HTTPException(404, "Asset not found")
+
+    @app.get("/{filename:path}", include_in_schema=False)
+    async def serve_frontend(filename: str):
+        """SPA 前端：非 /api/ 请求都返回对应静态文件或 index.html"""
+        if filename.startswith("api/"):
+            raise HTTPException(404, "Not found")
+        if not filename:
+            index_path = os.path.join(STATIC_DIR, "index.html")
+            if os.path.exists(index_path):
+                return FileResponse(index_path, media_type="text/html")
+            raise HTTPException(404, "Not found")
+        file_path = os.path.join(STATIC_DIR, filename)
+        if os.path.exists(file_path) and os.path.isfile(file_path):
+            return FileResponse(file_path)
+        index_path = os.path.join(STATIC_DIR, "index.html")
+        if os.path.exists(index_path):
+            return FileResponse(index_path, media_type="text/html")
+        raise HTTPException(404, "Not found")
 
 
 def JSON_STRINGIFY(obj: dict) -> str:
