@@ -62,7 +62,13 @@ if os.path.isdir(STATIC_DIR):
     @app.get("/{filename:path}", include_in_schema=False)
     async def serve_frontend(filename: str):
         """SPA 前端：非 /api/ 请求都返回对应静态文件或 index.html"""
-        if filename.startswith("api/") or not filename:
+        if filename.startswith("api/"):
+            raise HTTPException(404, "Not found")
+        # 根路径或空路径 → 返回 index.html
+        if not filename:
+            index_path = os.path.join(STATIC_DIR, "index.html")
+            if os.path.exists(index_path):
+                return FileResponse(index_path, media_type="text/html")
             raise HTTPException(404, "Not found")
         # 直接文件请求（如 favicon.svg, icons.svg）
         file_path = os.path.join(STATIC_DIR, filename)
