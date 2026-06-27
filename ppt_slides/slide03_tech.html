@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><head><style>
+html { background: #0a1628; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; background: #0a1628; display: flex; flex-direction: column; }
+.header { padding: 22pt 40pt 0 40pt; display: flex; align-items: center; }
+.header .num { color: #00d4aa; font-size: 36pt; font-weight: bold; margin-right: 14pt; }
+.header h1 { color: #ffffff; font-size: 20pt; margin: 0; }
+.main { flex: 1; padding: 10pt 40pt 16pt 40pt; display: flex; gap: 18pt; }
+.left { flex: 1.2; } .right { flex: 1; background: rgba(0,212,170,0.08); border-radius: 8pt; padding: 14pt; border: 1pt solid rgba(0,212,170,0.3); }
+h3 { color: #00d4aa; font-size: 12pt; margin: 0 0 6pt 0; }
+p { color: #b0bec5; font-size: 9pt; margin: 4pt 0; line-height: 1.4; }
+.code-box { background: rgba(0,0,0,0.4); border-radius: 6pt; padding: 10pt; margin-top: 8pt; }
+.code-box p { color: #00d4aa; font-size: 8pt; font-family: Courier New, monospace; margin: 1pt 0; }
+</style></head>
+<body>
+<div class="header"><p class="num">02</p><h1>核心技术：DeepSeek API + Prompt Engineering</h1></div>
+<div class="main">
+<div class="left">
+<h3>DeepSeek 大模型特性</h3>
+<p>128K token 上下文窗口，可处理完整论文草稿</p>
+<p>强大的中文理解和结构化信息提取能力</p>
+<p>通过 API 调用，无需本地部署</p>
+<h3 style="margin-top: 10pt;">Prompt Engineering 策略</h3>
+<p>专用 System Prompt 引导输出规范 JSON</p>
+<p>明确定义标题/作者/摘要/章节/参考文献识别规则</p>
+<p>temperature=0.3 确保一致性和可复现性</p>
+</div>
+<div class="right">
+<h3>输出 JSON 结构</h3>
+<div class="code-box">
+<p>{</p><p>  "title": "论文标题",</p><p>  "author": "作者",</p>
+<p>  "abstract": "摘要...",</p><p>  "keywords": ["KW1","KW2"],</p>
+<p>  "sections": [{</p><p>    "heading":"引言",</p><p>    "content":"..."</p><p>  }],</p>
+<p>  "references": [...]</p><p>}</p>
+</div>
+</div>
+</div>
+</body></html>

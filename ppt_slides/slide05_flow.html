@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><style>
+html { background: #0a1628; }
+body { width: 720pt; height: 405pt; margin: 0; padding: 0; font-family: Arial, sans-serif; background: #0a1628; display: flex; flex-direction: column; }
+.header { padding: 28pt 40pt 0 40pt; display: flex; align-items: center; }
+.header .num { color: #00d4aa; font-size: 40pt; font-weight: bold; margin-right: 16pt; }
+.header h1 { color: #ffffff; font-size: 24pt; margin: 0; }
+.main { flex: 1; padding: 16pt 30pt; display: flex; align-items: center; gap: 0; }
+.step { flex: 1; text-align: center; }
+.step-num { width: 38pt; height: 38pt; border-radius: 50%; background: #00d4aa; margin: 0 auto 10pt auto; display: flex; align-items: center; justify-content: center; }
+.step-num p { color: #0a1628; font-size: 15pt; font-weight: bold; margin: 0; }
+.step h3 { color: #ffffff; font-size: 11pt; margin: 0 0 4pt 0; }
+.step p { color: #8899aa; font-size: 8pt; margin: 2pt 0; line-height: 1.4; }
+.arr { width: 16pt; text-align: center; } .arr p { color: #00d4aa; font-size: 16pt; margin: 0; }
+</style></head>
+<body>
+<div class="header"><p class="num">04</p><h1>智能排版核心流程</h1></div>
+<div class="main">
+<div class="step"><div class="step-num"><p>1</p></div><h3>上传/粘贴</h3><p>用户上传 Word 草稿或粘贴纯文本</p></div>
+<div class="arr"><p>&gt;</p></div>
+<div class="step"><div class="step-num"><p>2</p></div><h3>文本提取</h3><p>python-docx 解析 DOCX，提取纯文本</p></div>
+<div class="arr"><p>&gt;</p></div>
+<div class="step"><div class="step-num"><p>3</p></div><h3>结构识别</h3><p>DeepSeek API 识别标题/摘要/章节/参考文献</p></div>
+<div class="arr"><p>&gt;</p></div>
+<div class="step"><div class="step-num"><p>4</p></div><h3>模板匹配</h3><p>选择 GB/T 7713/通用/课程论文模板</p></div>
+<div class="arr"><p>&gt;</p></div>
+<div class="step"><div class="step-num"><p>5</p></div><h3>输出文档</h3><p>生成规范 Word 文档并下载</p></div>
+</div>
+</body></html>

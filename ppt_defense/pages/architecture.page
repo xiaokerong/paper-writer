@@ -1,0 +1,400 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [320, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 500, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>系统架构总览</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: arch-desc
+    elementType: text
+    bounds: [60, 120, 550, 70]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p>前后端分离架构，模块化引擎设计，</p>
+        <p>覆盖论文写作全流程服务。</p>
+
+  - elementId: fe-card-bg
+    elementType: shape
+    bounds: [60, 205, 260, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$white"}
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: fe-icon
+    elementType: icon
+    bounds: [75, 220, 28, 28]
+    iconName: "fas:desktop"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: fe-title
+    elementType: text
+    bounds: [112, 218, 190, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>前端层</strong></p>
+
+  - elementId: fe-desc
+    elementType: text
+    bounds: [75, 255, 230, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>React + TypeScript</p>
+        <p>Tailwind CSS + Vite</p>
+
+  - elementId: be-card-bg
+    elementType: shape
+    bounds: [340, 205, 260, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$white"}
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: be-icon
+    elementType: icon
+    bounds: [355, 220, 28, 28]
+    iconName: "fas:server"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: be-title
+    elementType: text
+    bounds: [392, 218, 190, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>后端服务</strong></p>
+
+  - elementId: be-desc
+    elementType: text
+    bounds: [355, 255, 230, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>FastAPI + Python</p>
+        <p>RESTful API 设计</p>
+
+  - elementId: ai-card-bg
+    elementType: shape
+    bounds: [60, 325, 260, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$white"}
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: ai-icon
+    elementType: icon
+    bounds: [75, 340, 28, 28]
+    iconName: "fas:robot"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: ai-title
+    elementType: text
+    bounds: [112, 338, 190, 30]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>AI 生成引擎</strong></p>
+
+  - elementId: ai-desc
+    elementType: text
+    bounds: [75, 375, 230, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>DeepSeek v4 API</p>
+        <p>结构化 Prompt 工程</p>
+
+  - elementId: polish-card-bg
+    elementType: shape
+    bounds: [340, 325, 260, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$white"}
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: polish-icon
+    elementType: icon
+    bounds: [355, 340, 28, 28]
+    iconName: "fas:wand-magic-sparkles"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: polish-title
+    elementType: text
+    bounds: [392, 338, 190, 30]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>润色引擎</strong></p>
+
+  - elementId: polish-desc
+    elementType: text
+    bounds: [355, 375, 230, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>语法修正 / 学术改写</p>
+        <p>内容扩展 / 文本精简</p>
+
+  - elementId: export-card-bg
+    elementType: shape
+    bounds: [60, 445, 260, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$white"}
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: export-icon
+    elementType: icon
+    bounds: [75, 460, 28, 28]
+    iconName: "fas:file-word"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: export-title
+    elementType: text
+    bounds: [112, 458, 190, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>导出模块</strong></p>
+
+  - elementId: export-desc
+    elementType: text
+    bounds: [75, 495, 230, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>python-docx 规范导出</p>
+        <p>GB/T 7713 / IEEE / ACM</p>
+
+  - elementId: more-card-bg
+    elementType: shape
+    bounds: [340, 445, 260, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$white"}
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: more-icon
+    elementType: icon
+    bounds: [355, 460, 28, 28]
+    iconName: "fas:chart-pie"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: more-title
+    elementType: text
+    bounds: [392, 458, 190, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>更多引擎</strong></p>
+
+  - elementId: more-desc
+    elementType: text
+    bounds: [355, 495, 230, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>选题 / 文献 / 查重</p>
+        <p>可视化 / 开题报告</p>
+
+  - elementId: arrow-fe-to-be
+    elementType: shape
+    bounds: [200, 255, 140, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: arrow-ai-to-polish
+    elementType: shape
+    bounds: [200, 375, 140, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: arrow-export-to-more
+    elementType: shape
+    bounds: [200, 495, 140, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: detail-title
+    elementType: text
+    bounds: [660, 120, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>后端引擎清单</p>
+
+  - elementId: detail-table
+    elementType: table
+    bounds: [660, 160, 560, 390]
+    columnWidths: [0.25, 0.45, 0.30]
+    rowHeights: [0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+    style: "$default"
+    rows:
+      - - content: {text: "引擎", fontSize: 14}
+        - content: {text: "职责", fontSize: 14}
+        - content: {text: "技术要点", fontSize: 14}
+      - - content: {text: "paper_engine", fontSize: 13}
+        - content: {text: "论文生成、多轮续写", fontSize: 13}
+        - content: {text: "DeepSeek v4", fontSize: 13}
+      - - content: {text: "polish_engine", fontSize: 13}
+        - content: {text: "学术润色四种模式", fontSize: 13}
+        - content: {text: "结构化Prompt", fontSize: 13}
+      - - content: {text: "export_engine", fontSize: 13}
+        - content: {text: "Word文档导出", fontSize: 13}
+        - content: {text: "python-docx", fontSize: 13}
+      - - content: {text: "format_engine", fontSize: 13}
+        - content: {text: "结构识别与模板套用", fontSize: 13}
+        - content: {text: "JSON模板", fontSize: 13}
+      - - content: {text: "topic_engine", fontSize: 13}
+        - content: {text: "选题推荐与趋势分析", fontSize: 13}
+        - content: {text: "AI可视化数据", fontSize: 13}
+      - - content: {text: "literature_engine", fontSize: 13}
+        - content: {text: "文献搜索与综述生成", fontSize: 13}
+        - content: {text: "Semantic Scholar", fontSize: 13}
+      - - content: {text: "plagiarism_engine", fontSize: 13}
+        - content: {text: "查重分析与降重改写", fontSize: 13}
+        - content: {text: "AI原创性评估", fontSize: 13}
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>04</p>

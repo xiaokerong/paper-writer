@@ -1,0 +1,68 @@
+pageType: cover
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#0F2744"}
+    - {position: 1, color: "#1B3A5F"}
+elements:
+  - elementId: deco-line-top
+    elementType: shape
+    bounds: [340, 200, 600, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "#4A6D8C40"}
+
+  - elementId: cover-label
+    elementType: text
+    bounds: [240, 230, 800, 30]
+    content:
+      style: "$caption"
+      color: "$accent"
+      fontSize: 16
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>人工智能综合项目开发 · 期末答辩</p>
+
+  - elementId: cover-title
+    elementType: text
+    bounds: [140, 270, 1000, 150]
+    content:
+      style: "$title"
+      fontSize: 48
+      align: [center, middle]
+      text: |
+        <p>课程论文智能写作</p>
+        <p>与润色系统</p>
+
+  - elementId: accent-bar
+    elementType: shape
+    bounds: [540, 420, 200, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: cover-subtitle
+    elementType: text
+    bounds: [240, 445, 800, 35]
+    content:
+      style: "$subtitle"
+      color: "$accent"
+      fontSize: 22
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>基于 DeepSeek 大模型的 AI 论文辅助写作平台</p>
+
+  - elementId: cover-info
+    elementType: text
+    bounds: [340, 500, 600, 80]
+    content:
+      style: "$caption"
+      color: "#FFFFFFAA"
+      fontSize: 16
+      lineHeight: 1.8
+      align: [center, top]
+      text: |
+        <p>选题5：论文自动生成及润色系统</p>
+        <p>React + FastAPI + DeepSeek v4 + python-docx</p>

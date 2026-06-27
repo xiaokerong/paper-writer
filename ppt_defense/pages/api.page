@@ -1,0 +1,260 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [960, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 500, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>项目成果与 API 概览</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: api-table
+    elementType: table
+    bounds: [60, 125, 700, 420]
+    columnWidths: [0.15, 0.25, 0.45, 0.15]
+    rowHeights: [0.08, 0.077, 0.077, 0.077, 0.077, 0.077, 0.077, 0.077, 0.077, 0.077, 0.077, 0.075, 0.075]
+    style: "$default"
+    rows:
+      - - content: {text: "方法", fontSize: 13}
+        - content: {text: "路径", fontSize: 13}
+        - content: {text: "说明", fontSize: 13}
+        - content: {text: "状态", fontSize: 13}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/generate", fontSize: 12}
+        - content: {text: "生成论文初稿", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/polish", fontSize: 12}
+        - content: {text: "文本润色", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/revise", fontSize: 12}
+        - content: {text: "多轮对话修改", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "GET", fontSize: 12}
+        - content: {text: "/api/export/{id}", fontSize: 12}
+        - content: {text: "导出 Word", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/format/pipeline", fontSize: 12}
+        - content: {text: "统一排版管道", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/topic/recommend", fontSize: 12}
+        - content: {text: "选题推荐", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/literature/search", fontSize: 12}
+        - content: {text: "文献搜索", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/proposal/generate", fontSize: 12}
+        - content: {text: "开题报告生成", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/plagiarism/analyze", fontSize: 12}
+        - content: {text: "查重分析", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/chart/generate", fontSize: 12}
+        - content: {text: "学术配图生成", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "POST", fontSize: 12}
+        - content: {text: "/api/visual/hotspots", fontSize: 12}
+        - content: {text: "研究热点可视化", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+      - - content: {text: "GET", fontSize: 12}
+        - content: {text: "/api/health", fontSize: 12}
+        - content: {text: "健康检查", fontSize: 12}
+        - content: {text: "✅", fontSize: 12}
+
+  - elementId: right-title
+    elementType: text
+    bounds: [800, 125, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>前端界面</p>
+
+  - elementId: right-content
+    elementType: text
+    bounds: [800, 170, 420, 280]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>• React 18 + TypeScript 构建</p>
+        <p>• Tailwind CSS 响应式布局</p>
+        <p>• 分章节卡片式论文预览</p>
+        <p>• 润色结果对比展示</p>
+        <p>• 一键导出与下载</p>
+        <p>• 实时状态反馈与加载提示</p>
+
+  - elementId: right-metric-title
+    elementType: text
+    bounds: [800, 470, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>系统指标</p>
+
+  - elementId: metric1-num
+    elementType: text
+    bounds: [800, 515, 120, 45]
+    content:
+      fontSize: 32
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>20+</p>
+
+  - elementId: metric1-label
+    elementType: text
+    bounds: [800, 565, 120, 25]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>API 接口</p>
+
+  - elementId: metric2-num
+    elementType: text
+    bounds: [950, 515, 120, 45]
+    content:
+      fontSize: 32
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>10+</p>
+
+  - elementId: metric2-label
+    elementType: text
+    bounds: [950, 565, 120, 25]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>独立引擎</p>
+
+  - elementId: metric3-num
+    elementType: text
+    bounds: [1100, 515, 120, 45]
+    content:
+      fontSize: 32
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>5+</p>
+
+  - elementId: metric3-label
+    elementType: text
+    bounds: [1100, 565, 120, 25]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>学术模板</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>11</p>

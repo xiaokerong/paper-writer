@@ -1,0 +1,292 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [640, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 400, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>技术亮点</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: num1-bg
+    elementType: shape
+    bounds: [60, 130, 44, 44]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: num1-text
+    elementType: text
+    bounds: [60, 130, 44, 44]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>1</p>
+
+  - elementId: item1-title
+    elementType: text
+    bounds: [120, 130, 500, 28]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>DeepSeek v4 推理模型</p>
+
+  - elementId: item1-desc
+    elementType: text
+    bounds: [120, 165, 1100, 40]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>基于 DeepSeek v4-flash 推理模型，具备强大的链式思考与长文本生成能力，支持 8K 输出上下文。</p>
+
+  - elementId: num2-bg
+    elementType: shape
+    bounds: [60, 225, 44, 44]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: num2-text
+    elementType: text
+    bounds: [60, 225, 44, 44]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>2</p>
+
+  - elementId: item2-title
+    elementType: text
+    bounds: [120, 225, 500, 28]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>结构化 Prompt 工程</p>
+
+  - elementId: item2-desc
+    elementType: text
+    bounds: [120, 260, 1100, 40]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>精心设计 System Prompt + JSON 格式化指令，确保输出结构一致、内容高质量、可直接解析。</p>
+
+  - elementId: num3-bg
+    elementType: shape
+    bounds: [60, 320, 44, 44]
+    shapeName: ellipse
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: num3-text
+    elementType: text
+    bounds: [60, 320, 44, 44]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>3</p>
+
+  - elementId: item3-title
+    elementType: text
+    bounds: [120, 320, 500, 28]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      color: "$accent"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>多层 JSON 容错解析</p>
+
+  - elementId: item3-desc
+    elementType: text
+    bounds: [120, 355, 1100, 40]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>四层容错策略：直接解析 → 转义修复 → 正则提取 → 截断修复，覆盖 LLM 输出常见异常。</p>
+
+  - elementId: num4-bg
+    elementType: shape
+    bounds: [60, 415, 44, 44]
+    shapeName: ellipse
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: num4-text
+    elementType: text
+    bounds: [60, 415, 44, 44]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>4</p>
+
+  - elementId: item4-title
+    elementType: text
+    bounds: [120, 415, 500, 28]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      color: "$accent"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>模块化引擎架构</p>
+
+  - elementId: item4-desc
+    elementType: text
+    bounds: [120, 450, 1100, 40]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>10+ 独立引擎设计，职责清晰，耦合度低，便于后续扩展新功能（如 LaTeX 导出、PDF 生成）。</p>
+
+  - elementId: num5-bg
+    elementType: shape
+    bounds: [60, 510, 44, 44]
+    shapeName: ellipse
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: num5-text
+    elementType: text
+    bounds: [60, 510, 44, 44]
+    content:
+      fontSize: 18
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>5</p>
+
+  - elementId: item5-title
+    elementType: text
+    bounds: [120, 510, 500, 28]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>学术模板体系</p>
+
+  - elementId: item5-desc
+    elementType: text
+    bounds: [120, 545, 1100, 40]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>JSON 化模板配置，支持 GB/T 7713、IEEE、ACM 等标准，轻松扩展新的学术格式规范。</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>10</p>

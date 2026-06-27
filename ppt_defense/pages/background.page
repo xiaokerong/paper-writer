@@ -1,0 +1,188 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [0, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 500, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>项目背景与目标</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: pain-icon
+    elementType: icon
+    bounds: [60, 130, 32, 32]
+    iconName: "fas:circle-exclamation"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: pain-title
+    elementType: text
+    bounds: [105, 130, 200, 32]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      color: "$accent"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>痛点</p>
+
+  - elementId: pain-content
+    elementType: text
+    bounds: [60, 175, 550, 165]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>• 课程论文写作耗时漫长，学生时间压力大</p>
+        <p>• 缺乏学术写作经验，难以组织论文章节</p>
+        <p>• 格式排版繁琐，引用规范易出错</p>
+        <p>• 参考文献查找与整理效率低下</p>
+
+  - elementId: opp-icon
+    elementType: icon
+    bounds: [60, 345, 32, 32]
+    iconName: "fas:lightbulb"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: opp-title
+    elementType: text
+    bounds: [105, 345, 200, 32]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      color: "$primary"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>机遇</p>
+
+  - elementId: opp-content
+    elementType: text
+    bounds: [60, 390, 550, 120]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>• DeepSeek 大模型具备强大的文本生成</p>
+        <p>  和语言理解能力</p>
+        <p>• AI 可辅助完成论文写作全流程</p>
+
+  - elementId: goal-card-bg
+    elementType: shape
+    bounds: [660, 130, 560, 340]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: goal-title
+    elementType: text
+    bounds: [690, 150, 200, 32]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      color: "$primary"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>项目目标</p>
+
+  - elementId: goal-content
+    elementType: text
+    bounds: [690, 195, 500, 255]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>构建一站式 AI 论文辅助写作平台，覆盖：</p>
+        <p> </p>
+        <p><strong>生成</strong> — 输入主题，AI 输出完整论文</p>
+        <p><strong>润色</strong> — 四种模式，精准改写</p>
+        <p><strong>排版</strong> — 多模板，一键规范</p>
+        <p><strong>导出</strong> — 标准 Word，直接提交</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>03</p>

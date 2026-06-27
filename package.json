@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "cd frontend\\paper-writer-app && npm run dev",
+    "build": "cd frontend\\paper-writer-app && npm run build",
+    "preview": "cd frontend\\paper-writer-app && npm run preview"
+  },
+  "dependencies": {
+    "docx": "^9.7.1",
+    "pptxgenjs": "^4.0.1"
+  }
+}

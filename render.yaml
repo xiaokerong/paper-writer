@@ -1,0 +1,45 @@
+# Render 基础设施即代码配置
+# 参考: https://render.com/docs/infrastructure-as-code
+
+services:
+  # ── 后端 FastAPI Web Service ──
+  - type: web
+    name: paper-writer-backend
+    runtime: python
+    repo: https://github.com/你的用户名/paper-writer
+    branch: main
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:${PORT:-8000}
+    healthCheckPath: /api/health
+    envVars:
+      - key: DEEPSEEK_API_KEY
+        sync: false  # 需要手动在 Dashboard 设置
+      - key: DEEPSEEK_BASE_URL
+        value: https://api.deepseek.com
+      - key: PORT
+        value: 8000
+
+  # ── 前端 React Static Site ──
+  - type: static
+    name: paper-writer-frontend
+    runtime: node
+    repo: https://github.com/你的用户名/paper-writer
+    branch: main
+    rootDir: frontend/paper-writer-app
+    buildCommand: npm install && npm run build
+    publishPath: frontend/paper-writer-app/dist
+    envVars:
+      - key: VITE_API_BASE
+        value: https://paper-writer-backend.onrender.com/api
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

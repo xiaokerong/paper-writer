@@ -1,0 +1,360 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [320, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 600, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>核心功能：学术润色与多轮交互</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: mode1-bg
+    elementType: shape
+    bounds: [60, 125, 270, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: mode1-icon
+    elementType: icon
+    bounds: [80, 145, 32, 32]
+    iconName: "fas:spell-check"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: mode1-title
+    elementType: text
+    bounds: [125, 142, 185, 36]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>语法修正</strong></p>
+
+  - elementId: mode1-desc
+    elementType: text
+    bounds: [80, 185, 230, 105]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>自动检测并修正语法错误、标点误用、句式杂糅等问题，提升语言规范性。</p>
+
+  - elementId: mode2-bg
+    elementType: shape
+    bounds: [350, 125, 270, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: mode2-icon
+    elementType: icon
+    bounds: [370, 145, 32, 32]
+    iconName: "fas:graduation-cap"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: mode2-title
+    elementType: text
+    bounds: [415, 142, 185, 36]
+    content:
+      fontSize: 18
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>学术化改写</strong></p>
+
+  - elementId: mode2-desc
+    elementType: text
+    bounds: [370, 185, 230, 105]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>将口语化表达转换为学术规范用语，增强专业性与严谨度。</p>
+
+  - elementId: mode3-bg
+    elementType: shape
+    bounds: [640, 125, 270, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: mode3-icon
+    elementType: icon
+    bounds: [660, 145, 32, 32]
+    iconName: "fas:expand"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: mode3-title
+    elementType: text
+    bounds: [705, 142, 185, 36]
+    content:
+      fontSize: 18
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>内容扩展</strong></p>
+
+  - elementId: mode3-desc
+    elementType: text
+    bounds: [660, 185, 230, 105]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>对简要论述进行深度展开，补充论据、案例与数据支撑，增强说服力。</p>
+
+  - elementId: mode4-bg
+    elementType: shape
+    bounds: [930, 125, 290, 180]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: mode4-icon
+    elementType: icon
+    bounds: [950, 145, 32, 32]
+    iconName: "fas:compress"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: mode4-title
+    elementType: text
+    bounds: [995, 142, 205, 36]
+    content:
+      fontSize: 18
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>文本精简</strong></p>
+
+  - elementId: mode4-desc
+    elementType: text
+    bounds: [950, 185, 250, 105]
+    content:
+      fontSize: 15
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>去除冗余表述，保留核心观点，使论述更凝练、逻辑更紧凑。</p>
+
+  - elementId: multi-title
+    elementType: text
+    bounds: [60, 330, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>多轮交互修改</p>
+
+  - elementId: multi-content
+    elementType: text
+    bounds: [60, 370, 560, 270]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>• 支持 <strong>逐章 / 逐段</strong> 针对性修改</p>
+        <p>• 自动保持对话上下文，理解论文整体逻辑</p>
+        <p>• 返回 <strong>修改说明</strong>，标注改动点与理由</p>
+        <p>• 历史版本管理，可随时回溯此前修改</p>
+        <p>• 基于 DeepSeek 推理能力，实现反复打磨</p>
+
+  - elementId: multi-visual-bg
+    elementType: shape
+    bounds: [660, 330, 560, 310]
+    shapeName: roundRect
+    adjustments: [6000]
+    fill: {type: solid, color: "$white"}
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: multi-v-user1-bg
+    elementType: shape
+    bounds: [680, 350, 200, 36]
+    shapeName: roundRect
+    adjustments: [15000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: multi-v-user1-text
+    elementType: text
+    bounds: [690, 350, 180, 36]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      text: |
+        <p>👤 扩展第三章论据</p>
+
+  - elementId: multi-v-ai1-bg
+    elementType: shape
+    bounds: [860, 395, 340, 50]
+    shapeName: roundRect
+    adjustments: [15000]
+    fill: {type: solid, color: "#1B3A5F10"}
+
+  - elementId: multi-v-ai1-text
+    elementType: text
+    bounds: [870, 395, 320, 50]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>🤖 已扩展，补充了2个案例与3组数据...</p>
+
+  - elementId: multi-v-user2-bg
+    elementType: shape
+    bounds: [680, 460, 220, 36]
+    shapeName: roundRect
+    adjustments: [15000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: multi-v-user2-text
+    elementType: text
+    bounds: [690, 460, 200, 36]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      text: |
+        <p>👤 结论部分再精炼一下</p>
+
+  - elementId: multi-v-ai2-bg
+    elementType: shape
+    bounds: [860, 505, 340, 50]
+    shapeName: roundRect
+    adjustments: [15000]
+    fill: {type: solid, color: "#1B3A5F10"}
+
+  - elementId: multi-v-ai2-text
+    elementType: text
+    bounds: [870, 505, 320, 50]
+    content:
+      fontSize: 13
+      color: "$text"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, middle]
+      text: |
+        <p>🤖 已精简，删除冗余表述，保留核心观点...</p>
+
+  - elementId: multi-v-arrow1
+    elementType: shape
+    bounds: [790, 386, 0, 9]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: dash, width: 1, color: "$secondary"}
+
+  - elementId: multi-v-arrow2
+    elementType: shape
+    bounds: [790, 496, 0, 9]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: dash, width: 1, color: "$secondary"}
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>06</p>

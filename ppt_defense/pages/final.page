@@ -1,0 +1,62 @@
+pageType: final
+background:
+  type: gradient
+  gradientType: linear
+  angle: 135
+  stops:
+    - {position: 0, color: "#0F2744"}
+    - {position: 1, color: "#1B3A5F"}
+elements:
+  - elementId: final-title
+    elementType: text
+    bounds: [240, 220, 800, 80]
+    content:
+      style: "$title"
+      fontSize: 52
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>感谢聆听</p>
+
+  - elementId: accent-bar
+    elementType: shape
+    bounds: [540, 320, 200, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: final-subtitle
+    elementType: text
+    bounds: [240, 350, 800, 40]
+    content:
+      style: "$subtitle"
+      color: "$white"
+      fontSize: 22
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>课程论文智能写作与润色系统</p>
+
+  - elementId: final-desc
+    elementType: text
+    bounds: [290, 410, 700, 60]
+    content:
+      style: "$caption"
+      color: "#FFFFFFAA"
+      fontSize: 16
+      lineHeight: 1.6
+      align: [center, top]
+      text: |
+        <p>基于 DeepSeek 大模型的 AI 论文辅助写作平台</p>
+        <p>React + FastAPI + DeepSeek v4 + python-docx</p>
+
+  - elementId: final-welcome
+    elementType: text
+    bounds: [440, 500, 400, 40]
+    content:
+      fontSize: 18
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>欢迎提问</p>

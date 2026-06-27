@@ -1,0 +1,363 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [320, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 600, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>核心功能：论文生成引擎</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: left-content
+    elementType: text
+    bounds: [60, 120, 560, 280]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p><strong>输入</strong></p>
+        <p>• 主题 + 关键词 + 大纲（可选）</p>
+        <p>• 支持传入真实文献引用列表</p>
+        <p>• 选择论文类型与输出语言</p>
+        <p><strong>输出</strong></p>
+        <p>结构化 JSON：标题 → 摘要 → 正文</p>
+        <p>→ 结论 → 参考文献</p>
+
+  - elementId: flow-step1-bg
+    elementType: shape
+    bounds: [660, 130, 120, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: flow-step1-text
+    elementType: text
+    bounds: [660, 130, 120, 60]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>用户输入</p>
+
+  - elementId: flow-arrow1
+    elementType: shape
+    bounds: [780, 160, 40, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: flow-step2-bg
+    elementType: shape
+    bounds: [820, 130, 120, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: flow-step2-text
+    elementType: text
+    bounds: [820, 130, 120, 60]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>Prompt 构建</p>
+
+  - elementId: flow-arrow2
+    elementType: shape
+    bounds: [940, 160, 40, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: flow-step3-bg
+    elementType: shape
+    bounds: [980, 130, 120, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: flow-step3-text
+    elementType: text
+    bounds: [980, 130, 120, 60]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>DeepSeek 生成</p>
+
+  - elementId: flow-arrow3
+    elementType: shape
+    bounds: [1100, 160, 40, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: flow-step4-bg
+    elementType: shape
+    bounds: [1140, 130, 80, 60]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: flow-step4-text
+    elementType: text
+    bounds: [1140, 130, 100, 60]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>JSON 输出</p>
+
+  - elementId: feature-title
+    elementType: text
+    bounds: [60, 400, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>关键特性</p>
+
+  - elementId: feature-card1-bg
+    elementType: shape
+    bounds: [60, 450, 280, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: feature-card1-icon
+    elementType: icon
+    bounds: [75, 465, 24, 24]
+    iconName: "fas:book"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: feature-card1-title
+    elementType: text
+    bounds: [110, 462, 215, 28]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>真实文献引用</strong></p>
+
+  - elementId: feature-card1-desc
+    elementType: text
+    bounds: [75, 498, 250, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>传入 Semantic Scholar 检索结果，在正文中恰当引用</p>
+
+  - elementId: feature-card2-bg
+    elementType: shape
+    bounds: [360, 450, 280, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: feature-card2-icon
+    elementType: icon
+    bounds: [375, 465, 24, 24]
+    iconName: "fas:comments"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: feature-card2-title
+    elementType: text
+    bounds: [410, 462, 215, 28]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>多轮对话修改</strong></p>
+
+  - elementId: feature-card2-desc
+    elementType: text
+    bounds: [375, 498, 250, 45]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>上下文保持，支持逐章/逐段反复打磨</p>
+
+  - elementId: feature-card3-bg
+    elementType: shape
+    bounds: [660, 450, 280, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: feature-card3-icon
+    elementType: icon
+    bounds: [675, 465, 24, 24]
+    iconName: "fas:code"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: feature-card3-title
+    elementType: text
+    bounds: [710, 462, 215, 28]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>JSON 容错解析</strong></p>
+
+  - elementId: feature-card3-desc
+    elementType: text
+    bounds: [675, 498, 250, 55]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>修复转义、截断等 LLM 输出常见问题</p>
+
+  - elementId: feature-card4-bg
+    elementType: shape
+    bounds: [960, 450, 260, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: feature-card4-icon
+    elementType: icon
+    bounds: [975, 465, 24, 24]
+    iconName: "fas:language"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: feature-card4-title
+    elementType: text
+    bounds: [1010, 462, 195, 28]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>多语言支持</strong></p>
+
+  - elementId: feature-card4-desc
+    elementType: text
+    bounds: [975, 498, 230, 45]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>支持中英文论文生成与润色</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>05</p>

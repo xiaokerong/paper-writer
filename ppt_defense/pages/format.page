@@ -1,0 +1,443 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [320, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 600, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>核心功能：智能排版与导出</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: left-title
+    elementType: text
+    bounds: [60, 120, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>排版管道流程</p>
+
+  - elementId: pipe-step1-bg
+    elementType: shape
+    bounds: [60, 160, 100, 40]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: pipe-step1-text
+    elementType: text
+    bounds: [60, 160, 100, 40]
+    content:
+      fontSize: 13
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>输入</p>
+
+  - elementId: pipe-arrow1
+    elementType: shape
+    bounds: [160, 180, 20, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: pipe-step2-bg
+    elementType: shape
+    bounds: [180, 160, 100, 40]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: pipe-step2-text
+    elementType: text
+    bounds: [180, 160, 100, 40]
+    content:
+      fontSize: 13
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>识别</p>
+
+  - elementId: pipe-arrow2
+    elementType: shape
+    bounds: [280, 180, 20, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: pipe-step3-bg
+    elementType: shape
+    bounds: [300, 160, 100, 40]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: pipe-step3-text
+    elementType: text
+    bounds: [300, 160, 100, 40]
+    content:
+      fontSize: 13
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>模板</p>
+
+  - elementId: pipe-arrow3
+    elementType: shape
+    bounds: [400, 180, 20, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: pipe-step4-bg
+    elementType: shape
+    bounds: [420, 160, 100, 40]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: pipe-step4-text
+    elementType: text
+    bounds: [420, 160, 100, 40]
+    content:
+      fontSize: 13
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>渲染</p>
+
+  - elementId: pipe-arrow4
+    elementType: shape
+    bounds: [520, 180, 20, 0]
+    shapeName: straightConnector1
+    arrow: [null, "arrow"]
+    border: {style: solid, width: 2, color: "$secondary"}
+
+  - elementId: pipe-step5-bg
+    elementType: shape
+    bounds: [540, 160, 100, 40]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: pipe-step5-text
+    elementType: text
+    bounds: [540, 160, 100, 40]
+    content:
+      fontSize: 13
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>输出</p>
+
+  - elementId: template-title
+    elementType: text
+    bounds: [60, 220, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>支持模板</p>
+
+  - elementId: template-table
+    elementType: table
+    bounds: [60, 260, 580, 220]
+    columnWidths: [0.25, 0.45, 0.30]
+    rowHeights: [0.16, 0.168, 0.168, 0.168, 0.168, 0.168]
+    style: "$default"
+    rows:
+      - - content: {text: "模板", fontSize: 14}
+        - content: {text: "适用场景", fontSize: 14}
+        - content: {text: "格式标准", fontSize: 14}
+      - - content: {text: "GB/T 7713", fontSize: 13}
+        - content: {text: "中国学位论文", fontSize: 13}
+        - content: {text: "国标", fontSize: 13}
+      - - content: {text: "IEEE", fontSize: 13}
+        - content: {text: "电气电子工程论文", fontSize: 13}
+        - content: {text: "IEEE", fontSize: 13}
+      - - content: {text: "ACM", fontSize: 13}
+        - content: {text: "计算机科学论文", fontSize: 13}
+        - content: {text: "ACM", fontSize: 13}
+      - - content: {text: "课程论文", fontSize: 13}
+        - content: {text: "通用课程报告", fontSize: 13}
+        - content: {text: "通用", fontSize: 13}
+      - - content: {text: "期刊论文", fontSize: 13}
+        - content: {text: "学术期刊投稿", fontSize: 13}
+        - content: {text: "通用", fontSize: 13}
+
+  - elementId: format-title
+    elementType: text
+    bounds: [60, 500, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>格式规范</p>
+
+  - elementId: format-content
+    elementType: text
+    bounds: [60, 540, 580, 100]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.6
+      align: [left, top]
+      text: |
+        <p>页边距、行距、字体、缩进、页眉页脚、目录自动生成</p>
+        <p>宋体正文 + 黑体标题，1.5 倍行距，首行缩进 2 字符</p>
+
+  - elementId: right-title
+    elementType: text
+    bounds: [680, 120, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>导出能力</p>
+
+  - elementId: export-card1-bg
+    elementType: shape
+    bounds: [680, 165, 270, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: export-card1-icon
+    elementType: icon
+    bounds: [700, 180, 28, 28]
+    iconName: "fas:file-word"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: export-card1-title
+    elementType: text
+    bounds: [740, 178, 195, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>Word 导出</strong></p>
+
+  - elementId: export-card1-desc
+    elementType: text
+    bounds: [700, 215, 230, 50]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>python-docx 生成标准 .docx 文件，可直接提交</p>
+
+  - elementId: export-card2-bg
+    elementType: shape
+    bounds: [970, 165, 270, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: export-card2-icon
+    elementType: icon
+    bounds: [990, 180, 28, 28]
+    iconName: "fas:file-import"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: export-card2-title
+    elementType: text
+    bounds: [1030, 178, 195, 30]
+    content:
+      fontSize: 16
+      color: "$primary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>DOCX 解析</strong></p>
+
+  - elementId: export-card2-desc
+    elementType: text
+    bounds: [990, 215, 230, 50]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>上传现有 DOCX，提取结构后重新排版</p>
+
+  - elementId: export-card3-bg
+    elementType: shape
+    bounds: [680, 295, 270, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: export-card3-icon
+    elementType: icon
+    bounds: [700, 310, 28, 28]
+    iconName: "fas:file-pdf"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: export-card3-title
+    elementType: text
+    bounds: [740, 308, 195, 30]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>LaTeX / PDF</strong></p>
+
+  - elementId: export-card3-desc
+    elementType: text
+    bounds: [700, 345, 230, 50]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>预留接口，支持未来扩展学术排版</p>
+
+  - elementId: export-card4-bg
+    elementType: shape
+    bounds: [970, 295, 270, 110]
+    shapeName: roundRect
+    adjustments: [8000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: export-card4-icon
+    elementType: icon
+    bounds: [990, 310, 28, 28]
+    iconName: "fas:sliders"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: export-card4-title
+    elementType: text
+    bounds: [1030, 308, 195, 30]
+    content:
+      fontSize: 16
+      color: "$accent"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p><strong>样式覆盖</strong></p>
+
+  - elementId: export-card4-desc
+    elementType: text
+    bounds: [990, 345, 230, 50]
+    content:
+      fontSize: 14
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans, MiSans"
+      lineHeight: 1.4
+      align: [left, top]
+      text: |
+        <p>支持自定义字体、行距等样式参数</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>07</p>

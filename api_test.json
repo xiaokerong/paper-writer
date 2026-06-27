@@ -1,0 +1,32 @@
+{
+  "id": "296ec7bf-a655-48b1-b235-bae4e8a21354",
+  "object": "chat.completion",
+  "created": 1781632166,
+  "model": "deepseek-v4-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Hello!",
+        "reasoning_content": "We are asked to \"Say hello\". The instruction is straightforward. The response should be a greeting. Probably just \"Hello!\" or something similar. Since it's a simple request, I'll respond with \"Hello!\""
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6,
+    "completion_tokens": 46,
+    "total_tokens": 52,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 43
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 6
+  },
+  "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402"
+}

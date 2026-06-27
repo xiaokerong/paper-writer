@@ -1,0 +1,162 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [960, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 400, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>总结与展望</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: left-title
+    elementType: text
+    bounds: [60, 125, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 22
+      color: "$primary"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>项目成果</p>
+
+  - elementId: left-content
+    elementType: text
+    bounds: [60, 170, 550, 510]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.5
+      align: [left, top]
+      text: |
+        <p>✅ AI 自动生成完整课程论文</p>
+        <p>   （标题 + 摘要 + 正文 + 结论 + 参考文献）</p>
+        <p> </p>
+        <p>✅ 四种学术润色模式</p>
+        <p>   （语法修正 / 学术改写 / 内容扩展 / 文本精简）</p>
+        <p> </p>
+        <p>✅ 一键导出符合规范的 Word 文档</p>
+        <p>   （GB/T 7713 / IEEE / ACM 等模板）</p>
+        <p> </p>
+        <p>✅ 精美前端交互界面</p>
+        <p>   （分章节预览 / 润色对比 / 实时导出）</p>
+        <p> </p>
+        <p>✅ 全流程学术服务</p>
+        <p>   （选题 / 文献 / 查重 / 可视化）</p>
+
+  - elementId: right-title
+    elementType: text
+    bounds: [660, 125, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 22
+      color: "$accent"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>未来方向</p>
+
+  - elementId: right-content
+    elementType: text
+    bounds: [660, 170, 560, 460]
+    content:
+      style: "$body"
+      fontSize: 18
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>▸ 支持 LaTeX 和 PDF 导出</p>
+        <p>▸ 增加参考文献自动检索与引用</p>
+        <p>▸ 接入知网 / 万方知识库</p>
+        <p>▸ 支持更多国际论文模板</p>
+        <p>▸ 多语言论文生成（英/日/德）</p>
+        <p>▸ 学术配图与数据表格自动插入</p>
+        <p>▸ 协作写作与版本控制</p>
+        <p>▸ 基于 RAG 的实时知识增强</p>
+
+  - elementId: divider-line
+    elementType: shape
+    bounds: [630, 170, 0, 460]
+    shapeName: straightConnector1
+    border: {style: solid, width: 1, color: "$divider"}
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>12</p>

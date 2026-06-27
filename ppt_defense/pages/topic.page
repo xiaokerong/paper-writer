@@ -1,0 +1,218 @@
+pageType: content
+background:
+  type: solid
+  color: "$background"
+elements:
+  - elementId: nav-bg
+    elementType: shape
+    bounds: [0, 0, 1280, 40]
+    shapeName: rect
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: nav-ch1
+    elementType: text
+    bounds: [0, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>01 项目背景与目标</p>
+
+  - elementId: nav-ch2
+    elementType: text
+    bounds: [320, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "$white"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>02 系统架构与核心功能</p>
+
+  - elementId: nav-ch3
+    elementType: text
+    bounds: [640, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>03 技术亮点与实现</p>
+
+  - elementId: nav-ch4
+    elementType: text
+    bounds: [960, 0, 320, 40]
+    content:
+      fontSize: 14
+      color: "#FFFFFF80"
+      fontFamily: "QuattrocentoSans, MiSans"
+      align: [center, middle]
+      wrap: false
+      text: |
+        <p>04 项目成果与展望</p>
+
+  - elementId: nav-indicator
+    elementType: shape
+    bounds: [320, 40, 320, 0]
+    shapeName: straightConnector1
+    border: {style: solid, width: 3, color: "$accent"}
+
+  - elementId: page-title
+    elementType: text
+    bounds: [60, 55, 600, 42]
+    content:
+      style: "$heading"
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>核心功能：选题分析与文献服务</p>
+
+  - elementId: title-bar
+    elementType: shape
+    bounds: [60, 100, 50, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: topic-card-bg
+    elementType: shape
+    bounds: [60, 120, 560, 260]
+    shapeName: roundRect
+    adjustments: [6000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: topic-icon
+    elementType: icon
+    bounds: [85, 140, 28, 28]
+    iconName: "fas:compass"
+    fill: {type: solid, color: "$primary"}
+
+  - elementId: topic-title
+    elementType: text
+    bounds: [125, 138, 250, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>AI 选题推荐</p>
+
+  - elementId: topic-content
+    elementType: text
+    bounds: [85, 180, 510, 185]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.7
+      align: [left, top]
+      text: |
+        <p>• 输入学科领域，AI 推荐有价值、可操作的选题</p>
+        <p>• 附带可视化分析：研究热度、创新度、数据可得性、实践价值、方法成熟度</p>
+        <p>• 生成关键词聚类、学科分布、热门趋势数据</p>
+        <p>• 支持多选题对比雷达图</p>
+
+  - elementId: lit-card-bg
+    elementType: shape
+    bounds: [60, 400, 560, 260]
+    shapeName: roundRect
+    adjustments: [6000]
+    fill: {type: solid, color: "$light"}
+
+  - elementId: lit-icon
+    elementType: icon
+    bounds: [85, 420, 28, 28]
+    iconName: "fas:book-open"
+    fill: {type: solid, color: "$accent"}
+
+  - elementId: lit-title
+    elementType: text
+    bounds: [125, 418, 250, 30]
+    content:
+      style: "$subheading"
+      fontSize: 20
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>文献服务</p>
+
+  - elementId: lit-content
+    elementType: text
+    bounds: [85, 460, 510, 185]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.7
+      align: [left, top]
+      text: |
+        <p>• Semantic Scholar 文献搜索，获取真实论文数据</p>
+        <p>• 自动生成文献综述，整合研究脉络</p>
+        <p>• 一键生成开题报告：背景、目的、方法、进度</p>
+        <p>• 引文分析、高引论文排行</p>
+
+  - elementId: right-chart-title
+    elementType: text
+    bounds: [660, 120, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 18
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>选题评估维度</p>
+
+  - elementId: radar-chart
+    elementType: chart
+    bounds: [660, 160, 560, 280]
+    type: radar
+    data:
+      - {dim: "研究热度", v1: 85, v2: 70}
+      - {dim: "创新空间", v1: 78, v2: 85}
+      - {dim: "数据可得", v1: 90, v2: 65}
+      - {dim: "实践价值", v1: 82, v2: 80}
+      - {dim: "方法成熟度", v1: 70, v2: 75}
+    x: dim
+    y: [v1, v2]
+    names: ["选题A", "选题B"]
+    colors: ["$primary", "$accent"]
+    legend: {position: bottom, fontSize: 12}
+    options:
+      fontFamily: "QuattrocentoSans, MiSans"
+
+  - elementId: right-flow-title
+    elementType: text
+    bounds: [660, 460, 300, 30]
+    content:
+      style: "$subheading"
+      fontSize: 18
+      align: [left, middle]
+      wrap: false
+      text: |
+        <p>服务流程</p>
+
+  - elementId: right-flow
+    elementType: text
+    bounds: [660, 500, 560, 150]
+    content:
+      style: "$body"
+      fontSize: 16
+      lineHeight: 1.8
+      align: [left, top]
+      text: |
+        <p>① 输入学科领域 → ② AI 推荐选题 → ③ 文献检索 → ④ 生成综述</p>
+        <p>→ ⑤ 生成开题报告 → ⑥ 论文生成 → ⑦ 排版导出</p>
+
+  - elementId: page-num
+    elementType: text
+    bounds: [1180, 680, 60, 25]
+    content:
+      style: "$caption"
+      align: [right, middle]
+      wrap: false
+      text: |
+        <p>08</p>
